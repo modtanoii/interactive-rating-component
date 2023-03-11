@@ -2,7 +2,7 @@
     height: 45px;
     width: 45px;
     border-radius: 50%;
-    background-color: hsl(216, 12%, 54%);
+    background-color: hsl(213, 19%, 22%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,12 +34,17 @@
     height: 45px;
     width: 45px;
     border-radius: 50%;
-    background-color: hsl(216, 12%, 54%);
+    background-color: hsl(213, 19%, 22%);
     align-items: center;
     display: flex;
     justify-content: center;
     color: rgb(226, 226, 226);
     font-weight: 700;
+}
+
+.rating-container.active {
+    color: white;
+    background-color: hsl(213, 19%, 55%);
 }
 
 .rating-container:hover {

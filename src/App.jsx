@@ -1,12 +1,24 @@
+import { useState } from 'react';
 import './App.css';
+
 import Rating from './components/Rating';
-import Card from './components/Card';
 import ThankYou from './components/ThankYou';
 
 function App() {
+  const [showThankyouPage, setShowThankyouPage] = useState(false);
+  const [rating, setRating] = useState(null);
+
   return (
-  <>
-    <Rating />
+    <>
+      {showThankyouPage ? (
+        <ThankYou rating={rating} />
+      ) : (
+        <Rating
+          rating={rating}
+          setRating={setRating}
+          setShowThankyouPage={setShowThankyouPage}
+        />
+    )}
   </>
   );
 }

@@ -3,7 +3,7 @@ import Card from './Card';
 import './ThankYou.css';
 import ThankYouImg from '../images/illustration-thank-you.svg';
 
-const ThankYou = () => {
+const ThankYou = ({rating}) => {
   return (
     <Card>
         <div className="thankyou-img-container">
@@ -11,7 +11,7 @@ const ThankYou = () => {
         </div>
 
         <div className="selected">
-            <p>You selected 5 out of 5</p> 
+            <p>You selected {rating} out of 5</p> 
         </div>
 
         <h2 className="title">Thank you!</h2>
